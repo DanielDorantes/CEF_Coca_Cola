@@ -1,0 +1,209 @@
+.react-calendar {
+  width: 200px;
+  background: 'rgba(228, 228, 229, .1)';
+  border: 1px #a0a096;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1em;
+}
+
+.react-calendar--doubleView {
+  width: 700px;
+}
+
+.react-calendar--doubleView .react-calendar__viewContainer {
+  display: flex;
+  margin: -0.5em;
+}
+
+.react-calendar--doubleView .react-calendar__viewContainer>* {
+  width: 25%;
+  margin: 0.5em;
+}
+
+.react-calendar,
+.react-calendar *,
+.react-calendar *:before,
+.react-calendar *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.react-calendar button {
+  margin: 0;
+  border: 0;
+  outline: none;
+}
+
+.react-calendar button:enabled:hover {
+  cursor: pointer;
+}
+
+.react-calendar__navigation {
+  height: 35px;
+  margin-bottom: 3;
+  text-align: center;
+  align-items: center;
+}
+
+.react-calendar__navigation button {
+  min-width: 15px;
+  background: none;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #e6e6e6;
+}
+
+.react-calendar__navigation button[disabled] {
+  background-color: #f0f0f0;
+
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.4em;
+}
+
+/* Texto de los meses */
+.react-calendar__year-view__months__month {
+  font-size: 0.5em;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+}
+
+.react-calendar__month-view__weekNumbers {
+  font-weight: bold;
+}
+
+.react-calendar__month-view__weekNumbers .react-calendar__tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.2em;
+  padding: calc(0.75em / 0.75) calc(0.5em / 0.75);
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #5e91ff;
+}
+
+/* Texto de los dias del calendario */
+.react-calendar__month-view__days__day {
+  font-size: 0.5em;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #757575;
+
+}
+
+.react-calendar__year-view .react-calendar__tile,
+.react-calendar__decade-view .react-calendar__tile,
+.react-calendar__century-view .react-calendar__tile {
+  padding: 2em 0.5em;
+}
+
+.react-calendar__tile {
+  /* max-width: 100%; */
+  text-align: center;
+  padding: 0.75em 0.5em;
+  background: none;
+}
+
+.react-calendar__tile:disabled {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #e6e6e6;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.react-calendar__tile--now {
+  color: #2893ffce;
+  /*  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; */
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #e6e6e6;
+}
+
+.react-calendar__tile--hasActive {
+  color: #76baff;
+}
+
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  color: #7fbfffce;
+  /*  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; */
+}
+
+.react-calendar__tile--active {
+  background: #00213a;
+  color: white;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #00213a;
+}
+
+.react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #e6e6e6;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* Texto del mes del encabezado */
+.react-calendar__navigation__label__labelText {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.4em;
+}
+
+/* Flechas de navegacion del calendario */
+.react-calendar__navigation__arrow {
+  font-size: 0.8em;
+}
+
+@media screen and (min-width:500px) {
+  .react-calendar {
+    width: 350px;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width:1500px) {
+  .react-calendar {
+    width: 200px;
+    font-size: 0.8em;
+  }
+}
+
+/* @media screen and (max-width:1000) { */
+  #canvas{
+    aspect-ratio:1150/450;
+    width: 800px;
+  }
+
+/* }  */
+
