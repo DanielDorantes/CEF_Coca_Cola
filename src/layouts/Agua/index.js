@@ -6,7 +6,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import Card from "@mui/material/Card";
 import ReplayIcon from '@mui/icons-material/Replay';
 import Stack from "@mui/material/Stack";
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend} from 'chart.js';
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { Bar, Line } from 'react-chartjs-2'
 import MDTypography from 'components/MDTypography';
 import DataTable from 'examples/Tables/DataTable';
@@ -163,10 +163,10 @@ function AguaScreem() {
   const [anchorEl2, setAnchorEl2] = useState(null);
   const open2 = Boolean(anchorEl2);
 
-  const handleClick2 = (event) => {  
+  const handleClick2 = (event) => {
     setAnchorEl2(event.currentTarget);
   };
-  
+
   const handleClose2 = () => {
     setAnchorEl2(null);
   };
@@ -450,6 +450,8 @@ function AguaScreem() {
     ]
   };
 
+  //! <--////////////////////////////////////////////////////////
+
   //! //////////////////////////////////////////////////////////////
   //! --> Grafica de agua general (m³) --> DATOS <--
   //! /////////////////////////////////////////////////////////////
@@ -534,6 +536,9 @@ function AguaScreem() {
       }
     ]
   };
+
+  //! <--////////////////////////////////////////////////////////
+
 
   // Variable de initialState de Data1
   let initialState1 = [];
@@ -653,13 +658,18 @@ function AguaScreem() {
   //TODO /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   //! Trabajando
-  console.log(Data)
+  // console.log(Data)
+  // console.log(Data2.Japama)
+  // console.log(Data2.Total)
+  // console.log(Data3)
+  // console.log(Data4)
 
   //TODO /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   return (
     <>
       <MDBox mt={1.5}>
+        {/* Primary section */}
         <Grid container spacing={3}>
           <Grid item xs={6} md={6} lg={2}>
             <MDBox mb={1.5}>
@@ -749,6 +759,7 @@ function AguaScreem() {
             </MDBox>
           </Grid>
         </Grid>
+        {/* Second section */}
         <Grid container spacing={3}>
           <Grid item xs={12} md={12} lg={12}>
             {/* Grafica de entrada consumo por hora(m3) */}
@@ -948,6 +959,7 @@ function AguaScreem() {
             </MDBox>
           </Grid>
         </Grid>
+        {/* Third section */}
         <Grid container spacing={2}>
           <Grid item xs={12} md={6} lg={6} >
             <MDTypography variant="h5"> Reporte Totalizador de Sistema de Medidores </MDTypography>

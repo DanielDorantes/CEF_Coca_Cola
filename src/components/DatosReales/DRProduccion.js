@@ -7,6 +7,8 @@ import { ProgresBar } from 'layouts/producionElementos/ProgresBar'
 import { StatusVelocidad } from 'layouts/producionElementos/StatusVelocidad'
 import React, { useState } from 'react'
 
+
+//! COMENTARIO
 export const DRProduccion = ({ AlertasPCCs = {
   OzLav: {
     Escala: { Maxima: 0, Minima: 0 },
@@ -25,7 +27,6 @@ export const DRProduccion = ({ AlertasPCCs = {
     Alerta: { Maxima: 0, Minima: 0 }
   }
 }, PCCs = { OzonoL5: 0, OzonoTorre: 0, TemperaturaL5: 0, PHL5: 0 }, statusVelocidad, statusVelocidadTurno, IndicadoresProduccion }) => {
-
 
   const [UnidadMedicion, setUnidadMedicion] = useState(true);
 
