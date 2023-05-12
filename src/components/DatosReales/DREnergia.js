@@ -7,12 +7,12 @@ import SalesTable from 'examples/Tables/SalesTable';
 
 
 export const DREnergia = ({datos = {
-                            consumoDiaTR1: 0,
-                            factorPotenciaTR1: 0,
-                            consumoDiaTR2: 0,
-                            factorPotenciaTR2: 0,
-                            consumoDiaTR3: 0,
-                            factorPotenciaTR3: 0
+                            consumoDiaTR1: 10,
+                            factorPotenciaTR1: 8,
+                            consumoDiaTR2: 9,
+                            factorPotenciaTR2: 15,
+                            consumoDiaTR3: 22,
+                            factorPotenciaTR3: 10
                           }}) => {
 
     

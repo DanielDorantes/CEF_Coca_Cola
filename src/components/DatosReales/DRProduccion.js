@@ -11,22 +11,22 @@ import React, { useState } from 'react'
 //! COMENTARIO
 export const DRProduccion = ({ AlertasPCCs = {
   OzLav: {
-    Escala: { Maxima: 0, Minima: 0 },
-    Alerta: { Maxima: 0, Minima: 0 }
+    Escala: { Maxima: 3, Minima: 0 },
+    Alerta: { Maxima: 3, Minima: 1 }
   },
   OzTor: {
-    Escala: { Maxima: 0, Minima: 0 },
-    Alerta: { Maxima: 0, Minima: 0 }
+    Escala: { Maxima: 0.6, Minima: 0 },
+    Alerta: { Maxima: 0.3, Minima: 0.1 }
   },
   TemLav: {
-    Escala: { Maxima: 0, Minima: 0 },
-    Alerta: { Maxima: 0, Minima: 0 }
+    Escala: { Maxima: 80, Minima: 20 },
+    Alerta: { Maxima: 60, Minima: 56 }
   },
   PhTor: {
-    Escala: { Maxima: 0, Minima: 0 },
-    Alerta: { Maxima: 0, Minima: 0 }
+    Escala: { Maxima: 10, Minima: 4 },
+    Alerta: { Maxima: 7.5, Minima: 5.9 }
   }
-}, PCCs = { OzonoL5: 0, OzonoTorre: 0, TemperaturaL5: 0, PHL5: 0 }, statusVelocidad, statusVelocidadTurno, IndicadoresProduccion }) => {
+}, PCCs = { OzonoL5: 1.5, OzonoTorre: 0.17, TemperaturaL5: 60.39, PHL5: 6 }, statusVelocidad, statusVelocidadTurno, IndicadoresProduccion }) => {
 
   const [UnidadMedicion, setUnidadMedicion] = useState(true);
 

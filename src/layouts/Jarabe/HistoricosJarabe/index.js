@@ -68,211 +68,211 @@ export const HistoricosJarabe = ({ turno /* , datosVelocidad = { turno1_Danger1:
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 1,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:02:40.517Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 2,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:03:40.517Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 3,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:04:40.510Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 4,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:05:40.517Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 5,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:06:40.523Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 6,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:07:40.593Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 7,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:08:40.533Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 8,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:09:40.540Z"
     },
     {
-      "RPM": 0,
-      "Nivel": 0,
+      "RPM": 8,
+      "Nivel": 5,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:10:40.513Z"
     },
     {
-      "RPM": 0,
-      "Nivel": 0,
+      "RPM": 8,
+      "Nivel": 5,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:11:40.527Z"
     },
     {
-      "RPM": 0,
-      "Nivel": 0,
+      "RPM": 9,
+      "Nivel": 5,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:12:40.620Z"
     },
     {
-      "RPM": 0,
-      "Nivel": 0,
+      "RPM": 9,
+      "Nivel": 5,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:13:40.597Z"
     },
     {
-      "RPM": 0,
-      "Nivel": 0,
+      "RPM": 9,
+      "Nivel": 5,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:14:40.530Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 9,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:15:40.530Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 10,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:16:40.570Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 10,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:17:40.580Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 10,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:18:40.530Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 10,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:19:40.613Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 11,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:20:40.540Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 11,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:21:40.640Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 11,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:22:40.543Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 11,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:23:40.623Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 11,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:24:40.530Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 12,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:25:40.530Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 12,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:26:40.527Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 12,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:27:40.543Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 12,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:28:40.533Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 13,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:29:40.633Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 13,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:30:40.563Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 13,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:31:40.637Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 13,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:32:40.610Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 13,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:33:40.530Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 13,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:34:40.553Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 14,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:35:40.543Z"
     },
     {
       "RPM": 0,
-      "Nivel": 0,
+      "Nivel": 14,
       "TemperaturaSala": 25,
       "Fecha": "2023-01-09T00:36:40.523Z"
     }

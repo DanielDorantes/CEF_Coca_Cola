@@ -26,12 +26,12 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import { SavePDF } from 'assets/PDF/SavePDF';
 
 export const DRAgua = ({ datos = {
-  Taxte: 0,
-  Japama: 0,
-  L1: 0,
+  Taxte: 15,
+  Japama: 50,
+  L1: 10,
   L2: 0,
-  L3: 0,
-  L5: 0
+  L3: 5,
+  L5: 3
 } }) => {
 
   return (

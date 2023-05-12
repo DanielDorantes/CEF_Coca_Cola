@@ -15,9 +15,7 @@ import ReactTooltip from 'react-tooltip';
 
 // import echarts from 'echarts';
 
-
 // import { SavePDFTableAguaConsumoDirario, SavePDFCip } from 'assets/PDF/SavePDF';
-
 
 export const CIP = () => {
 
@@ -36,24 +34,23 @@ export const CIP = () => {
 
   const initialData = {
     Ozono: {
-      Usuario: 'VISUAL',
-      OzonoLavadora: '',
-      OzonoTipo: '',
-      OzonoSecuencia: '',
+      Usuario: 'Tecnico',
+      OzonoLavadora: '03',
+      OzonoTipo: 'Ozono',
+      OzonoSecuencia: '3 pasos ozono',
       OzonoTiempoSecuencia: 0,
       OzonoHoras: 0,
       OzonoMinutos: 0,
       OzonoSalida: 0,
       OzonoRetorno: 0,
       FechaOzonoActivacion: 0,
-      FolioOzono: ''
-
+      FolioOzono: '202301010101'
     },
     Caliente: {
-      Usuario: 'VISUAL',
-      CalienteLavadora: '',
-      CalienteTipo: '',
-      CalienteSecuencia: '',
+      Usuario: 'Tecnico',
+      CalienteLavadora: '02',
+      CalienteTipo: 'Caliente',
+      CalienteSecuencia: '3 pasos caliente',
       CalienteTiempoSecuencia: 0,
       CalienteHoras: 0,
       CalienteMinutos: 0,
@@ -61,12 +58,271 @@ export const CIP = () => {
       CalienteTemperaturaSalida: 0,
       CalienteConductividad: 0,
       CalienteTempSecuencia: 0,
-      FechaCalienteActivacion: '',
-      FolioCaliente: ''
+      FechaCalienteActivacion: '2023-01-01',
+      FolioCaliente: '202301010201'
     }
-    , Datos: []
+    , Datos: [
+      {
+        "Temperatura_Retorno": 0,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 50,
+        "Fecha": "2023-01-09T00:00:40.517Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:01:40.500Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:02:40.517Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:03:40.517Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:04:40.510Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:05:40.517Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:06:40.523Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:07:40.593Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:08:40.533Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:09:40.540Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:10:40.513Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:11:40.527Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:12:40.620Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:13:40.597Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:14:40.530Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:15:40.530Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:16:40.570Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:17:40.580Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:18:40.530Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:19:40.613Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:20:40.540Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:21:40.640Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:22:40.543Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:23:40.623Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:24:40.530Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:25:40.530Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:26:40.527Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:27:40.543Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:28:40.533Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:29:40.633Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:30:40.563Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:31:40.637Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:32:40.610Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:33:40.530Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:34:40.553Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:35:40.543Z"
+      },
+      {
+        "Temperatura_Retorno": 20,
+        "Conductividad": 0,
+        "Temperatura_Salida": 25,
+        "ValorActivacion": 15,
+        "Fecha": "2023-01-09T00:36:40.523Z"
+      }
+    ]
   }
-
 
   const [cipArray, setCipArray] = useState(initialData);
 
@@ -117,9 +373,7 @@ export const CIP = () => {
 
   useEffect(total, [urlTotalArrays + cipEstado]);//el que esta dentro es una funcion, no es la variable
 
-
   useEffect(CipActual, []);
-
 
   // useEffect(() => {
   //   setCipEstado('todos');
@@ -136,7 +390,6 @@ export const CIP = () => {
   useEffect(() => {
     setCipEstado('todos');
   }, [cip])
-
 
   const ITEM_HEIGHT = 48;
   const ITEM_PADDING_TOP = 8;
@@ -267,8 +520,6 @@ export const CIP = () => {
         data: cip === 'caliente' ? arreglo.Datos.map(({ ValorActivacion }) => (ValorActivacion)) || [] : arreglo.Datos.map(({ ValorActivacion }) => (ValorActivacion)) || [],
         type: 'line',
       }
-
-
     ]
   };
 
@@ -281,8 +532,6 @@ export const CIP = () => {
   useEffect(() => Consulta, [cip + fecha])
 
   const handleChangeGraf = (event) => {
-    // setCip(event.target.value)
-    // event.target.value === 'ozono' ? setUrlApiArrays(`http://${wsUrl}:1880/getcipozono`) : setUrlApiArrays(`http://${wsUrl}:1880/getcipcaliente`)  
     event.target.value === 'ozono' ? setUrlApiFolio(`http://${wsUrl}:1880/getozonofolio/${moment(fecha).format("YYYY-MM-DD")}`) : setUrlApiFolio(`http://${wsUrl}:1880/getcalientefolio/${moment(fecha).format("YYYY-MM-DD")}`)
     event.target.value === 'ozono' ? setUrlTotalArrays(`http://${wsUrl}:1880/getcipdiaozono/${moment(fecha).format("YYYY-MM-DD")}`) : setUrlTotalArrays(`http://${wsUrl}:1880/getcipdiacaliente/${moment(fecha).format("YYYY-MM-DD")}`)
     setCip(event.target.value)
@@ -296,7 +545,6 @@ export const CIP = () => {
 
   }
 
-
   const OzonoHora = cipEstado === 'todos' ? (cipArray.Ozono.OzonoHoras >= 10 ? cipArray.Ozono.OzonoHoras : '0' + cipArray.Ozono.OzonoHoras) : (arreglo.Datos[arreglo.Datos.length - 1].Horas >= 10 ? arreglo.Datos[arreglo.Datos.length - 1].Horas : '0' + arreglo.Datos[arreglo.Datos.length - 1].Horas);
   const OzonoMinuto = cipEstado === 'todos' ? (cipArray.Ozono.OzonoMinutos >= 10 ? cipArray.Ozono.OzonoMinutos : '0' + cipArray.Ozono.OzonoMinutos) : (arreglo.Datos[arreglo.Datos.length - 1].Minutos >= 10 ? arreglo.Datos[arreglo.Datos.length - 1].Minutos : '0' + arreglo.Datos[arreglo.Datos.length - 1].Minutos);
 
@@ -305,7 +553,7 @@ export const CIP = () => {
 
   /*-----------------------------------------------------------------------*/
 
-  const [chartRef, setChartRef] = useState()//useRef();
+  const [chartRef, setChartRef] = useState();//useRef();
 
   const ReporteGrafica = () => {
     const ref = chartRef.getEchartsInstance();
@@ -315,8 +563,6 @@ export const CIP = () => {
   }
 
   /*-----------------------------------------------------------------------*/
-
-
   // console.log(fecha);
   // console.log('Folio: '+folio);
   // console.log('CalienteTemperaturaSalida :'+ data.Caliente.CalienteTemperaturaSalida);
@@ -329,7 +575,6 @@ export const CIP = () => {
   // console.log(arreglo.Datos.map(({ Ozono_ppm_Salida }) => (Ozono_ppm_Salida)));
   // console.log(arreglo.Datos.map(({ Temperatura_Salida }) => (Temperatura_Salida)));
   // console.log(cipArray);
-
 
   return (
     <>
@@ -351,7 +596,6 @@ export const CIP = () => {
                         onChange={handleChangeDate}
                       />
                     </Grid>
-
                     <FormControl sx={{ width: "auto" }} >
                       <InputLabel id="demo-multiple-name-label">Area</InputLabel>
                       <Select
@@ -406,11 +650,8 @@ export const CIP = () => {
                 <Box>
                   <Typography gutterBottom variant="h2" component="div" align='center' mt='2%'  >
                     Gráfica CIP
-                    <Box
-                      display="inline-block"
-                    >
+                    <Box display="inline-block">
                       <ReactTooltip
-
                         id='btnDownload'
                         place='bottom'
                         //type='info'
@@ -461,11 +702,13 @@ export const CIP = () => {
                       <Typography gutterBottom variant="h6" component="div"  >TIEMPO DE PROCESO: {cip === 'ozono' ? OzonoHora + ':' + OzonoMinuto : CalienteHora + ':' + CalienteMinuto}</Typography>
                     </Grid>
                     <Grid md={5}>
-                      {cip === 'ozono' ? <>
-                        {<Typography gutterBottom variant="h6" component="div"  >PPM RETORNO PROMEDIO: {cipEstado === 'todos' ? (cipArray.Ozono.OzonoRetorno || 0).toFixed(2) : (arreglo.Datos[arreglo.Datos.length - 1].Ozono_ppm_Retorno).toFixed(2)} PPM</Typography>}
-                        {<Typography gutterBottom variant="h6" component="div"  >PPM SALIDA PROMEDIO: {cipEstado === 'todos' ? (cipArray.Ozono.OzonoSalida || 0).toFixed(2) : (arreglo.Datos[arreglo.Datos.length - 1].Ozono_ppm_Salida).toFixed(2)} PPM</Typography>}
-                      </>
-                        : <>
+                      {cip === 'ozono' ?
+                        <>
+                          {<Typography gutterBottom variant="h6" component="div"  >PPM RETORNO PROMEDIO: {cipEstado === 'todos' ? (cipArray.Ozono.OzonoRetorno || 0).toFixed(2) : (arreglo.Datos[arreglo.Datos.length - 1].Ozono_ppm_Retorno).toFixed(2)} PPM</Typography>}
+                          {<Typography gutterBottom variant="h6" component="div"  >PPM SALIDA PROMEDIO: {cipEstado === 'todos' ? (cipArray.Ozono.OzonoSalida || 0).toFixed(2) : (arreglo.Datos[arreglo.Datos.length - 1].Ozono_ppm_Salida).toFixed(2)} PPM</Typography>}
+                        </>
+                        :
+                        <>
                           {<Typography gutterBottom variant="h6" component="div"  >PORCENTAJE Ms: {cipEstado === 'todos' ? cipArray.Caliente.CalienteConductividad : arreglo.Datos[arreglo.Datos.length - 1].Conductividad}%</Typography>}
                           {<Typography gutterBottom variant="h6" component="div"  >TEMPERATURA RETORNO PROMEDIO: {cipEstado === 'todos' ? (cipArray.Caliente.CalienteTemperaturaRetorno) : arreglo.Datos[arreglo.Datos.length - 1].Temperatura_Retorno} °C</Typography>}
                           {<Typography gutterBottom variant="h6" component="div"  >TEMPERATURA SALIDA PROMEDIO: {cipEstado === 'todos' ? (cipArray.Caliente.CalienteTemperaturaSalida) : arreglo.Datos[arreglo.Datos.length - 1].Temperatura_Salida} °C</Typography>}

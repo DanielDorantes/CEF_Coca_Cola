@@ -179,6 +179,7 @@ export const ProgresBar = ({ turno }) => {
 
   const wsUrl = process.env.REACT_APP_AUTH_URL_WEBSOCKET;//192.168.100.13
   const [valor, setValor] = useState([])
+  //! Quitar estos comentatios
   const statusDeVelocidad = () => {
     fetch(`http://${wsUrl}:1880/api/statusVelocidad/${turno}`)
       .then((response) => response.json())
@@ -188,11 +189,13 @@ export const ProgresBar = ({ turno }) => {
       .catch((error) => {
         // console.log('fetch data failed', error);
       });
-    //alert(valor)
+  //   //alert(valor)
+  
   }
+  //! Quitar estos comentatios
   useEffect(statusDeVelocidad, [valor]);
 
-  //console.log(valor);
+  console.log(valor);
 
   const handleClose = () => {
     setOpen(false);

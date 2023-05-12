@@ -67,124 +67,124 @@ export const Jarabes = () => {
 
   const initialState = {
     Tanque1: {
-      Nivel: 0,
-      Porcentaje: 0,
-      Producto: '',
-      Temperatura: '',
-      RPM: '',
+      Nivel: 5000,
+      Porcentaje: 15,
+      Producto: 'Coca cola',
+      Temperatura: '22',
+      RPM: '50',
       VidaUtil: '',
       TiempoVidaReceta: '',
-      FechaLlenado: ''
+      FechaLlenado: '2023-01-01'
     },
     Tanque2: {
-      Nivel: 0,
-      Porcentaje: 0,
-      Producto: '',
-      Temperatura: '',
-      RPM: '',
+      Nivel: 5000,
+      Porcentaje: 15,
+      Producto: 'Coca cola',
+      Temperatura: '22',
+      RPM: '50',
       VidaUtil: '',
       TiempoVidaReceta: '',
-      FechaLlenado: ''
+      FechaLlenado: '2023-01-01'
     },
     Tanque3: {
-      Nivel: 0,
-      Porcentaje: 0,
-      Producto: '',
-      Temperatura: '',
-      RPM: '',
+      Nivel: 5000,
+      Porcentaje: 15,
+      Producto: 'Coca cola',
+      Temperatura: '22',
+      RPM: '50',
       VidaUtil: '',
       TiempoVidaReceta: '',
-      FechaLlenado: ''
+      FechaLlenado: '2023-01-01'
     },
     Tanque4: {
-      Nivel: 0,
-      Porcentaje: 0,
-      Producto: '',
-      Temperatura: '',
-      RPM: '',
+      Nivel: 5000,
+      Porcentaje: 15,
+      Producto: 'Coca cola',
+      Temperatura: '22',
+      RPM: '50',
       VidaUtil: '',
       TiempoVidaReceta: '',
-      FechaLlenado: ''
+      FechaLlenado: '2023-01-01'
     },
     Tanque5: {
-      Nivel: 0,
-      Porcentaje: 0,
-      Producto: '',
-      Temperatura: '',
-      RPM: '',
+      Nivel: 5000,
+      Porcentaje: 15,
+      Producto: 'Coca cola',
+      Temperatura: '22',
+      RPM: '50',
       VidaUtil: '',
       TiempoVidaReceta: '',
-      FechaLlenado: ''
+      FechaLlenado: '2023-01-01'
     },
     Tanque6: {
-      Nivel: 0,
-      Porcentaje: 0,
-      Producto: '',
-      Temperatura: '',
-      RPM: '',
+      Nivel: 5000,
+      Porcentaje: 15,
+      Producto: 'Coca cola',
+      Temperatura: '22',
+      RPM: '50',
       VidaUtil: '',
       TiempoVidaReceta: '',
-      FechaLlenado: ''
+      FechaLlenado: '2023-01-01'
     },
     Tanque7: {
-      Nivel: 0,
-      Porcentaje: 0,
-      Producto: '',
-      Temperatura: '',
-      RPM: '',
+      Nivel: 5000,
+      Porcentaje: 15,
+      Producto: 'Coca cola',
+      Temperatura: '22',
+      RPM: '50',
       VidaUtil: '',
       TiempoVidaReceta: '',
-      FechaLlenado: ''
+      FechaLlenado: '2023-01-01'
     },
     Tanque8: {
-      Nivel: 0,
-      Porcentaje: 0,
-      Producto: '',
-      Temperatura: '',
-      RPM: '',
+      Nivel: 5000,
+      Porcentaje: 15,
+      Producto: 'Coca cola',
+      Temperatura: '22',
+      RPM: '50',
       VidaUtil: '',
       TiempoVidaReceta: '',
-      FechaLlenado: ''
+      FechaLlenado: '2023-01-01'
     },
     Tanque9: {
-      Nivel: 0,
-      Porcentaje: 0,
-      Producto: '',
-      Temperatura: '',
-      RPM: '',
+      Nivel: 5000,
+      Porcentaje: 15,
+      Producto: 'Coca cola',
+      Temperatura: '22',
+      RPM: '50',
       VidaUtil: '',
       TiempoVidaReceta: '',
-      FechaLlenado: ''
+      FechaLlenado: '2023-01-01'
     },
     Tanque10: {
-      Nivel: 0,
-      Porcentaje: 0,
-      Producto: '',
-      Temperatura: '',
-      RPM: '',
+      Nivel: 5000,
+      Porcentaje: 15,
+      Producto: 'Coca cola',
+      Temperatura: '22',
+      RPM: '50',
       VidaUtil: '',
       TiempoVidaReceta: '',
-      FechaLlenado: ''
+      FechaLlenado: '2023-01-01'
     },
     Tanque11: {
-      Nivel: 0,
-      Porcentaje: 0,
-      Producto: '',
-      Temperatura: '',
-      RPM: '',
+      Nivel: 5000,
+      Porcentaje: 15,
+      Producto: 'Coca cola',
+      Temperatura: '22',
+      RPM: '50',
       VidaUtil: '',
       TiempoVidaReceta: '',
-      FechaLlenado: ''
+      FechaLlenado: '2023-01-01'
     },
     Tanque12: {
-      Nivel: 0,
-      Porcentaje: 0,
-      Producto: '',
-      Temperatura: '',
-      RPM: '',
+      Nivel: 5000,
+      Porcentaje: 15,
+      Producto: 'Coca cola',
+      Temperatura: '22',
+      RPM: '50',
       VidaUtil: '',
       TiempoVidaReceta: '',
-      FechaLlenado: ''
+      FechaLlenado: '2023-01-01'
     },
     Temperatura: 0
   }

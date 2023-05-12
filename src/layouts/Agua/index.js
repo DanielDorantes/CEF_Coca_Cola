@@ -69,6 +69,7 @@ function AguaScreem() {
   const apiUrl = process.env.REACT_APP_API_URL;//http://192.168.100.13/5001/api
   // Api de Node-red -- Api of Node-red
   const wsUrl = process.env.REACT_APP_AUTH_URL_WEBSOCKET;//192.168.100.13
+  console.log(wsUrl)
 
   ChartJS.register(
     CategoryScale,
@@ -80,12 +81,12 @@ function AguaScreem() {
   );
 
   let initialState = {
-    Taxte: 0,
-    Japama: 0,
-    L1: 0,
+    Taxte: 15,
+    Japama: 50,
+    L1: 10,
     L2: 0,
-    L3: 0,
-    L5: 0,
+    L3: 5,
+    L5: 3
   };
 
   let initialState2 = [];
@@ -651,7 +652,6 @@ function AguaScreem() {
     consumoAguaDario();
     //setShowRefresh(true);
   }
-
 
   //TODO /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   //TODO --> Area de visualizacion de los variables en la consola

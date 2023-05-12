@@ -47,8 +47,8 @@ export const MainScreen =()=> {
       <MDBox mb={3}>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={12}>
-            <Divider component="li" variant="inset" flexItem />
-            <MDTypography ml={'50%'} variant="h3">Energia</MDTypography>
+            {/* <Divider component="li" variant="inset" flexItem /> */}
+            <MDTypography ml={'50%'} mt={'2%'} variant="h3">Energia</MDTypography>
           </Grid>
         </Grid>
       </MDBox>
