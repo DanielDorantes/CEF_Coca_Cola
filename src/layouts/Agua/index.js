@@ -69,7 +69,7 @@ function AguaScreem() {
   const apiUrl = process.env.REACT_APP_API_URL;//http://192.168.100.13/5001/api
   // Api de Node-red -- Api of Node-red
   const wsUrl = process.env.REACT_APP_AUTH_URL_WEBSOCKET;//192.168.100.13
-  console.log(wsUrl)
+  // console.log(wsUrl)
 
   ChartJS.register(
     CategoryScale,
@@ -173,7 +173,7 @@ function AguaScreem() {
   };
 
   const ConsumoAguaActual = async () => {
-    const urlConsumoActual = `http://${wsUrl}:1880/api/ConsumoAguaActual`;
+    const urlConsumoActual = `https://${wsUrl}:1880/api/ConsumoAguaActual`;
     //console.log(url);
     try {
       const response = await fetch(urlConsumoActual);
@@ -187,7 +187,7 @@ function AguaScreem() {
   }
 
   const ReporteConsumoAguaHora = async () => {
-    const urlReporteConsumoAguaHoras = `http://${wsUrl}:1880/api/ReporteConsumoAguaHoras`;
+    const urlReporteConsumoAguaHoras = `https://${wsUrl}:1880/api/ReporteConsumoAguaHoras`;
     //! Trabajando
     try {
       const response2 = await fetch(urlReporteConsumoAguaHoras);
@@ -203,7 +203,7 @@ function AguaScreem() {
     }
   }
 
-  const urlConsumoAguaporArea = `http://${wsUrl}:1880/api/ConsumoAguaporArea`;
+  const urlConsumoAguaporArea = `https://${wsUrl}:1880/api/ConsumoAguaporArea`;
 
   const ReporteConsumoAguaporArea = () => fetch(urlConsumoAguaporArea)
     .then(res => res.json())
@@ -218,9 +218,9 @@ function AguaScreem() {
 
   useEffect(ReporteConsumoAguaporArea, [minuto]);
 
-  const [url4, setUrl4] = useState(`http://${wsUrl}:1880/getreportetiempoagua/${moment(fechaInicio).format("YYYY-MM-DD")}/${moment(fechaFin).format("YYYY-MM-DD")}`)
+  const [url4, setUrl4] = useState(`https://${wsUrl}:1880/getreportetiempoagua/${moment(fechaInicio).format("YYYY-MM-DD")}/${moment(fechaFin).format("YYYY-MM-DD")}`)
 
-  const url5 = `http://${wsUrl}:1880/api/consumoTotalizadoActual`;
+  const url5 = `https://${wsUrl}:1880/api/consumoTotalizadoActual`;
 
   //! Objetivo 1
   // const url3 = `${apiUrl}/agua/getTotalizadoAgua?Fecha=${moment(fecha).format("YYYY-MM-DD")}`;
@@ -303,7 +303,7 @@ function AguaScreem() {
   //? //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   useEffect(() => {
-    setUrl4(`http://${wsUrl}:1880/getreportetiempoagua/${moment(fechaInicio).format("YYYY-MM-DD")}/${moment(fechaFin).format("YYYY-MM-DD")}`);
+    setUrl4(`https://${wsUrl}:1880/getreportetiempoagua/${moment(fechaInicio).format("YYYY-MM-DD")}/${moment(fechaFin).format("YYYY-MM-DD")}`);
   }, [fechaInicio, fechaFin])
 
   //? //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -662,7 +662,6 @@ function AguaScreem() {
   // console.log(Data2.Japama)
   // console.log(Data2.Total)
   // console.log(Data3)
-  // console.log(Data4)
 
   //TODO /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

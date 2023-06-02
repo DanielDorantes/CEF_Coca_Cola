@@ -83,7 +83,8 @@ export const ProduccionL5 = () => {
   // Action buttons for the BookingCard
 
   useEffect(() => {
-    ws.current = new WebSocket(`ws://${wsUrl}:3006`);
+    //! Se cambio el ws por wss
+    ws.current = new WebSocket(`wss://${wsUrl}:3006`);
     ws.current.onopen = () => console.log("ws opened");
     ws.current.onclose = () => console.log("ws closed");
 

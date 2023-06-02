@@ -57,7 +57,7 @@ import AguaScreem from "layouts/Agua";
 import { InspectorFisuras } from "layouts/Produccion/Fisuras/InspectorFisuras";
 import { Alexus } from "layouts/Produccion/L5/Alexus/Alexus";
 import { CIP } from "layouts/CIP"
-import { Pruebas } from "layouts/Pruebas";
+// import { Pruebas } from "layouts/Pruebas";
 
 const routes = [
   {/*
@@ -201,12 +201,12 @@ const routes = [
     component: <CIP />,
 
   },
-  {
-    name: "Test",
-    key: "Test",   
-    route: "/Test",
-    component: <Pruebas />,
-  },
+  // {
+  //   name: "Test",
+  //   key: "Test",   
+  //   route: "/Test",
+  //   component: <Pruebas />,
+  // },
   {/*
     type: "collapse",
     name: "Pages",

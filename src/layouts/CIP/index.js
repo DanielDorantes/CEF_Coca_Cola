@@ -28,9 +28,9 @@ export const CIP = () => {
 
   const [cipEstado, setCipEstado] = useState('todos');
 
-  const [urlTotalArrays, setUrlTotalArrays] = useState(`http://${wsUrl}:1880/getcipdiaozono/${moment(fecha).format("YYYY-MM-DD")}`);
+  const [urlTotalArrays, setUrlTotalArrays] = useState(`https://${wsUrl}:1880/getcipdiaozono/${moment(fecha).format("YYYY-MM-DD")}`);
 
-  const [urlApiFolio, setUrlApiFolio] = useState(`http://${wsUrl}:1880/getozonofolio/${moment(fecha).format("YYYY-MM-DD")}`);
+  const [urlApiFolio, setUrlApiFolio] = useState(`https://${wsUrl}:1880/getozonofolio/${moment(fecha).format("YYYY-MM-DD")}`);
 
   const initialData = {
     Ozono: {
@@ -335,8 +335,8 @@ export const CIP = () => {
   const foliosReales = folio.slice(1);
 
   const CipActual = () => {
-    //alert('por los jejes')
-    ws.current = new WebSocket(`ws://${wsUrl}:3008`);
+    //! Se cambio el ws por wss
+    ws.current = new WebSocket(`wss://${wsUrl}:3008`);
     ws.current.onopen = () => console.log("ws opened");
     ws.current.onclose = () => console.log("ws closed");
 
@@ -383,7 +383,7 @@ export const CIP = () => {
 
   useEffect(() => {
     setCipEstado('todos');
-    setUrlTotalArrays(`http://${wsUrl}:1880/getcipdiaozono/${moment(fecha).format("YYYY-MM-DD")}`);
+    setUrlTotalArrays(`https://${wsUrl}:1880/getcipdiaozono/${moment(fecha).format("YYYY-MM-DD")}`);
     setCip(cip)
   }, [fecha])
 
@@ -532,8 +532,8 @@ export const CIP = () => {
   useEffect(() => Consulta, [cip + fecha])
 
   const handleChangeGraf = (event) => {
-    event.target.value === 'ozono' ? setUrlApiFolio(`http://${wsUrl}:1880/getozonofolio/${moment(fecha).format("YYYY-MM-DD")}`) : setUrlApiFolio(`http://${wsUrl}:1880/getcalientefolio/${moment(fecha).format("YYYY-MM-DD")}`)
-    event.target.value === 'ozono' ? setUrlTotalArrays(`http://${wsUrl}:1880/getcipdiaozono/${moment(fecha).format("YYYY-MM-DD")}`) : setUrlTotalArrays(`http://${wsUrl}:1880/getcipdiacaliente/${moment(fecha).format("YYYY-MM-DD")}`)
+    event.target.value === 'ozono' ? setUrlApiFolio(`https://${wsUrl}:1880/getozonofolio/${moment(fecha).format("YYYY-MM-DD")}`) : setUrlApiFolio(`https://${wsUrl}:1880/getcalientefolio/${moment(fecha).format("YYYY-MM-DD")}`)
+    event.target.value === 'ozono' ? setUrlTotalArrays(`https://${wsUrl}:1880/getcipdiaozono/${moment(fecha).format("YYYY-MM-DD")}`) : setUrlTotalArrays(`https://${wsUrl}:1880/getcipdiacaliente/${moment(fecha).format("YYYY-MM-DD")}`)
     setCip(event.target.value)
 
   }

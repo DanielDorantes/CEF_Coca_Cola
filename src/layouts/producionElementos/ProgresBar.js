@@ -181,7 +181,9 @@ export const ProgresBar = ({ turno }) => {
   const [valor, setValor] = useState([])
   //! Quitar estos comentatios
   const statusDeVelocidad = () => {
-    fetch(`http://${wsUrl}:1880/api/statusVelocidad/${turno}`)
+    //! Se cambio el http por https
+    fetch(`https://${wsUrl}:1880/api/statusVelocidad/${turno}`)
+    // fetch(`http://${wsUrl}:1880/api/statusVelocidad/${turno}`)
       .then((response) => response.json())
       .then((json) => {
         setValor(json);

@@ -45,8 +45,8 @@ export const HistoricosJarabe = ({ turno /* , datosVelocidad = { turno1_Danger1:
 
   //? Metodos para las api y sus variables de InitialState o InitialData
   const [fecha, setFecha] = useState(Date.now());
-  const [urlTanques, setUrlTanques] = useState(`http://${wsUrl}:1880/gettanques/${moment(fecha).format("YYYY-MM-DD")}`);
-  const [urlFolio, setUrlFolio] = useState(`http://${wsUrl}:1880/getfolio/${moment(fecha).format("YYYY-MM-DD")}`)
+  const [urlTanques, setUrlTanques] = useState(`https://${wsUrl}:1880/gettanques/${moment(fecha).format("YYYY-MM-DD")}`);
+  const [urlFolio, setUrlFolio] = useState(`https://${wsUrl}:1880/getfolio/${moment(fecha).format("YYYY-MM-DD")}`)
   const [area, setArea] = useState('js1');
   const [folio, setFolio] = useState('todos');
   const [producto, setProducto] = useState('todos');
@@ -318,8 +318,8 @@ export const HistoricosJarabe = ({ turno /* , datosVelocidad = { turno1_Danger1:
   //? //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   useEffect(() => {
-    setUrlTanques(`http://${wsUrl}:1880/gettanques/${moment(fecha).format("YYYY-MM-DD")}`);
-    setUrlFolio(`http://${wsUrl}:1880/getfolio/${moment(fecha).format("YYYY-MM-DD")}`)
+    setUrlTanques(`https://${wsUrl}:1880/gettanques/${moment(fecha).format("YYYY-MM-DD")}`);
+    setUrlFolio(`https://${wsUrl}:1880/getfolio/${moment(fecha).format("YYYY-MM-DD")}`)
     setArea(area)
     setFolio('todos')
   }, [fecha])

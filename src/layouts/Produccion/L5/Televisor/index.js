@@ -86,7 +86,8 @@ export const TelevisorPCCSL5 = () => {
   let Alertas = {};
 
   useEffect(() => {
-    ws.current = new WebSocket(`ws://${wsUrl}:3005`);
+    //! Se cambio el ws por wss
+    ws.current = new WebSocket(`wss://${wsUrl}:3005`);
     ws.current.onopen = () => console.log("ws opened");
     ws.current.onclose = () => console.log("ws closed");
 
@@ -110,7 +111,7 @@ export const TelevisorPCCSL5 = () => {
 
   const lineaHistorica = (async () => {
 
-    const url = `http://${wsUrl}:1880/api/statusPccs`;
+    const url = `https://${wsUrl}:1880/api/statusPccs`;
 
     try {
       const response = await fetch(url);

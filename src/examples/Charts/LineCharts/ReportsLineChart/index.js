@@ -103,7 +103,7 @@ function ReportsLineChart({ color, title, chart, funReport, Escala = {
 
     //alert(area)
     //alert(`http://${wsUrl}:1880/api/Alertas/pccs/reset`);
-    const url = `http://${wsUrl}:1880/api/Alertas/pccs/reset`;
+    const url = `https://${wsUrl}:1880/api/Alertas/pccs/reset`;
     //alert(url)
     //console.log(url);
     try {
@@ -145,7 +145,7 @@ function ReportsLineChart({ color, title, chart, funReport, Escala = {
     //alert("entro a medicionesPCC5");
     //alert(area)
     //alert(`http://${wsUrl}:1880/api/Alertas/pccs/update?EsMax=${esMax}&EsMin=${esMin}&AleMax=${aleMax}&AleMin=${aleMin}`);
-    const url = `http://${wsUrl}:1880/api/Alertas/pccs/update?EsMax=${esMax}&EsMin=${esMin}&AleMax=${aleMax}&AleMin=${aleMin}`;
+    const url = `https://${wsUrl}:1880/api/Alertas/pccs/update?EsMax=${esMax}&EsMin=${esMin}&AleMax=${aleMax}&AleMin=${aleMin}`;
     //alert(url)
     //console.log(url);
     try {
@@ -293,7 +293,7 @@ function ReportsLineChart({ color, title, chart, funReport, Escala = {
   const options = chart;
 
 
-  let url = `http://${baseUrl}:1880/api/${funReport}/${turno}/${fecha.format("YYYY-MM-DD")}`;
+  let url = `https://${baseUrl}:1880/api/${funReport}/${turno}/${fecha.format("YYYY-MM-DD")}`;
 
   const styleTable = {
     position: 'absolute',

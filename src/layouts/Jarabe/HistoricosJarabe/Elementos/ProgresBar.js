@@ -13,7 +13,9 @@ export const ProgresBar = ({ turno }) => {
   const wsUrl = process.env.REACT_APP_AUTH_URL_WEBSOCKET;//192.168.100.13
   const [valor, setValor] = useState([])
   const statusDeVelocidad = () => {
-    fetch(`http://${wsUrl}:1880/api/statusVelocidad/${turno}`)
+    //! Se cambio el http por https
+    // fetch(`https://${wsUrl}:1880/api/statusVelocidad/${turno}`)
+    fetch(`https//${wsUrl}:1880/api/statusVelocidad/${turno}`)
       .then((response) => response.json())
       .then((json) => {
         setValor(json);

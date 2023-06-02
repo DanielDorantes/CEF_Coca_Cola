@@ -25,7 +25,8 @@ export const MainScreen =()=> {
   }
   const [wsData, setWsData] = useState(initialState);
   useEffect(() => {
-    ws.current = new WebSocket(`ws://${wsUrl}:3002`);
+    //! Se cambio el ws por wss
+    ws.current = new WebSocket(`wss://${wsUrl}:3002`);
     ws.current.onopen = () => console.log("ws opened");
     ws.current.onclose = () => console.log("ws closed");
   

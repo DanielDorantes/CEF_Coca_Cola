@@ -75,7 +75,7 @@ function ChannelsChart({ porcentaje,chart, funBotton }) {
   const [turno, setTurno] = useState("1");
   const [fecha, setFecha] = useState(moment(Date.now()).subtract(1, "days"));
 
-  let url = `http://${baseUrl}:1880/api/getProduccionPCCL5/${turno}/${fecha.format('YYYY-MM-DD')}`;
+  let url = `https://${baseUrl}:1880/api/getProduccionPCCL5/${turno}/${fecha.format('YYYY-MM-DD')}`;
 
   const DownloadClick = (data) => {
     //alert(event);

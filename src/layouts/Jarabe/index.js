@@ -196,7 +196,8 @@ export const Jarabes = () => {
 
 
   useEffect(() => {
-    ws.current = new WebSocket(`ws://${wsUrl}:3007`);
+    //! Se cambio el ws por wss
+    ws.current = new WebSocket(`wss://${wsUrl}:3007`);
     ws.current.onopen = () => console.log("ws opened");
     ws.current.onclose = () => console.log("ws closed");
 

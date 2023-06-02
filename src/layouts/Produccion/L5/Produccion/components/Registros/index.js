@@ -192,7 +192,7 @@ export const RegistrosProduccion = ({ turno, ProduccionTurnos = {
     ]
   };
   let datos;
-  let url5 = `http://${wsUrl}:1880/api/getProduccionPCCL5/${Turno}/${fecha.format('YYYY-MM-DD')}`;
+  let url5 = `https://${wsUrl}:1880/api/getProduccionPCCL5/${Turno}/${fecha.format('YYYY-MM-DD')}`;
   const reporte = async () => {
     //console.log(url);
     try {
